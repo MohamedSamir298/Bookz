@@ -43,8 +43,6 @@ class _SearchResultViewWidgetState extends State<SearchResultViewWidget> {
           ),
           Divider(thickness: 1, color: ColorsConstants.kTertiaryColor1),
           Expanded(child: SearchListGridBuilderWidget(isListView: isListView)),
-          Spacer(),
-          if(context.read<SearchCubit>().state.isPaginationLoading) const Center(child: CupertinoActivityIndicator())
         ],
       ),
     );
